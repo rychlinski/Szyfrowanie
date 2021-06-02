@@ -6,19 +6,21 @@
 def szyfrowanie(tekst):
     for i in range(len(tekst)):
         if (tekst[i] == "a"):
-            tekst[i] = "y"
+            tekst[i] = "@"
         elif (tekst[i] == "e"):
-            tekst[i] = "i"
+            tekst[i] = "^"
         elif (tekst[i] == "i"):
-            tekst[i] = "o"
+            tekst[i] = "&"
         elif (tekst[i] == "o"):
-            tekst[i] = "a"
-        elif (tekst[i] == "y"):
-            tekst[i] = "e"
+            tekst[i] = "%"
+        # dodanie znaków specjalnych do szyfru
+
 
     # wyświetlenie zaszyfrowanego tekstu
-        tekst = ''.join(tekst)
-        return(tekst)
+    tekst = ''.join(tekst)
+    return(tekst)
+
+
 #funkcja deszyfrująca
 
 def deszyfrowanie(tekst):
