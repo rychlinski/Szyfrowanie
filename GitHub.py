@@ -31,6 +31,9 @@ def deszyfrowanie(tekst):
         elif (tekst[i] == "e"):
             tekst[i] = "y"
 
+    tekst = ''.join(tekst)
+    return(tekst)
+
 #menu
 
 x = 0
