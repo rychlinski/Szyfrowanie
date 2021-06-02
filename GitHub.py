@@ -46,5 +46,7 @@ while (x == 0):
         print("Bledna operacja!")
 #działa
 
+
 #Gotowe!
 #Przemysław Rychliński nr indeksu 71576
+#Wiktoria Kozłowska nr indeksu 70502
