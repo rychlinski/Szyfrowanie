@@ -45,7 +45,7 @@ def szyfrowanie(tekst):
 def deszyfrowanie (tekst):
     klucz = 5
     for i in range(len(tekst)):
-        x = ord(tekst[i]) + klucz
+        x = ord(tekst[i]) - klucz
         tekst[i] = chr(x)
 
     tekst = ''.join(tekst)
