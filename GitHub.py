@@ -27,12 +27,12 @@ while (x == 0):
     if (operacja == "1"):
         klucz = list(int(input("Podaj klucz od 1 do 10: ")))
         tekst = list(str(input("Podaj tekst: ")))
-        tekst = szyfrowanie(tekst)
+        tekst = szyfrowanie(tekst,klucz)
         print(tekst)
     elif (operacja == "2"):
         klucz = list(int(input("Podaj klucz od 1 do 10: ")))
         tekst = list(str(input("Podaj tekst: ")))
-        tekst = deszyfrowanie(tekst)
+        tekst = deszyfrowanie(tekst,klucz)
         print(tekst)
     elif (operacja == "3"):
         x = 1
