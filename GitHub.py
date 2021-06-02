@@ -13,6 +13,8 @@ def szyfrowanie(tekst):
             tekst[i] = "&"
         elif (tekst[i] == "o"):
             tekst[i] = "%"
+        elif (tekst[i] == "y"):
+            tekst[i] = "+"
         # dodanie znaków specjalnych do szyfru
 
 
@@ -25,15 +27,15 @@ def szyfrowanie(tekst):
 
 def deszyfrowanie(tekst):
     for i in range(len(tekst)):
-        if (tekst[i] == "y"):
+        if (tekst[i] == "@"):
             tekst[i] = "a"
-        elif (tekst[i] == "i"):
+        elif (tekst[i] == "^"):
             tekst[i] = "e"
-        elif (tekst[i] == "o"):
+        elif (tekst[i] == "&"):
             tekst[i] = "i"
-        elif (tekst[i] == "a"):
+        elif (tekst[i] == "%"):
             tekst[i] = "o"
-        elif (tekst[i] == "e"):
+        elif (tekst[i] == "+"):
             tekst[i] = "y"
 
     tekst = ''.join(tekst)
