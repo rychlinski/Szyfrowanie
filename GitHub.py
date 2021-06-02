@@ -22,7 +22,6 @@ def szyfrowanie(tekst):
         x = ord(tekst[i]) + klucz
         tekst[i] = chr(x)
 
-
     # wyświetlenie zaszyfrowanego tekstu
     tekst = ''.join(tekst)
     return(tekst)
@@ -30,18 +29,24 @@ def szyfrowanie(tekst):
 
 #funkcja deszyfrująca
 
-def deszyfrowanie(tekst):
-    for i in range(len(tekst)):
-        if (tekst[i] == "@"):
-            tekst[i] = "a"
-        elif (tekst[i] == "^"):
-            tekst[i] = "e"
-        elif (tekst[i] == "&"):
+#def deszyfrowanie(tekst):
+    #for i in range(len(tekst)):
+        #if (tekst[i] == "@"):
+            #tekst[i] = "a"
+        #elif (tekst[i] == "^"):
+            #tekst[i] = "e"
+        #elif (tekst[i] == "&"):
             tekst[i] = "i"
-        elif (tekst[i] == "%"):
-            tekst[i] = "o"
-        elif (tekst[i] == "+"):
-            tekst[i] = "y"
+        #elif (tekst[i] == "%"):
+            #tekst[i] = "o"
+        #elif (tekst[i] == "+"):
+            #tekst[i] = "y"
+
+def deszyfrowanie (tekst):
+    klucz = 29
+    for i in range(len(tekst)):
+        x = ord(tekst[i]) + klucz
+        tekst[i] = chr(x)
 
     tekst = ''.join(tekst)
     return(tekst)
