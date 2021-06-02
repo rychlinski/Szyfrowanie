@@ -34,6 +34,9 @@ while (x == 0):
         print(tekst)
     elif (operacja == "2"):
         klucz = int(input("Podaj klucz od 1 do 10: "))
+        while (klucz<1 or klucz>10):
+            print("Błąd!")
+            klucz = int(input("Podaj klucz od 1 do 10: "))
         tekst = list(str(input("Podaj tekst: ")))
         tekst = deszyfrowanie(tekst,klucz)
         print(tekst)
