@@ -32,10 +32,12 @@ x = 0
 while (x == 0):
     operacja = str(input("Wybierz operacje (1,2 lub 3): \n 1.Szyfrowanie \n 2.Deszyfrowanie \n 3.Wyjście \n Wybierz: "))
     if (operacja == "1"):
+        klucz = list(int(input("Podaj klucz od 1 do 10: ")))
         tekst = list(str(input("Podaj tekst: ")))
         tekst = szyfrowanie(tekst)
         print(tekst)
     elif (operacja == "2"):
+        klucz = list(int(input("Podaj klucz od 1 do 10: ")))
         tekst = list(str(input("Podaj tekst: ")))
         tekst = deszyfrowanie(tekst)
         print(tekst)
