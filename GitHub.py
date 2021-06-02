@@ -2,6 +2,7 @@
 #Funkcja szyfrowanie, deszyfrowanie i jakieś menu
 
 
+
 # funkcja szyfrująca tekst
 def szyfrowanie(tekst):
     for i in range(len(tekst)):
@@ -15,3 +16,4 @@ def szyfrowanie(tekst):
             tekst[i] = "a"
         elif (tekst[i] == "y"):
             tekst[i] = "e"
+#wiktoria zrób deszyfrowanie
