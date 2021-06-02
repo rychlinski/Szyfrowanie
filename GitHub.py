@@ -16,6 +16,9 @@ def szyfrowanie(tekst):
         elif (tekst[i] == "y"):
             tekst[i] = "e"
 
+    # wyświetlenie zaszyfrowanego tekstu
+        tekst = ''.join(tekst)
+        return(tekst)
 #funkcja deszyfrująca
 
 def deszyfrowanie(tekst):
