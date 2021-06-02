@@ -3,19 +3,24 @@
 
 
 # funkcja szyfrująca tekst
-def szyfrowanie(tekst):
-    for i in range(len(tekst)):
-        if (tekst[i] == "a"):
-            tekst[i] = "@"
-        elif (tekst[i] == "e"):
-            tekst[i] = "^"
-        elif (tekst[i] == "i"):
-            tekst[i] = "&"
-        elif (tekst[i] == "o"):
-            tekst[i] = "%"
-        elif (tekst[i] == "y"):
-            tekst[i] = "+"
+#def szyfrowanie(tekst):
+#    for i in range(len(tekst)):
+#        if (tekst[i] == "a"):
+#            tekst[i] = "@"
+#        elif (tekst[i] == "e"):
+#            tekst[i] = "^"
+#        elif (tekst[i] == "i"):
+#            tekst[i] = "&"
+#        elif (tekst[i] == "o"):
+#            tekst[i] = "%"
+#        elif (tekst[i] == "y"):
+#            tekst[i] = "+"
         # dodanie znaków specjalnych do szyfru
+def szyfrowanie(tekst):
+    klucz = 29
+    for i in range(len(tekst)):
+        x = ord(tekst[i]) + klucz
+        tekst[i] = chr(x)
 
 
     # wyświetlenie zaszyfrowanego tekstu
