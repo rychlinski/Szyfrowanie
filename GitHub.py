@@ -36,7 +36,7 @@ def szyfrowanie(tekst):
         #elif (tekst[i] == "^"):
             #tekst[i] = "e"
         #elif (tekst[i] == "&"):
-            tekst[i] = "i"
+            #tekst[i] = "i"
         #elif (tekst[i] == "%"):
             #tekst[i] = "o"
         #elif (tekst[i] == "+"):
