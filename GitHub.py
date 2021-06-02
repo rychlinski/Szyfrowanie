@@ -30,3 +30,21 @@ def deszyfrowanie(tekst):
             tekst[i] = "o"
         elif (tekst[i] == "e"):
             tekst[i] = "y"
+
+#menu
+
+x = 0
+while (x == 0):
+    operacja = str(input("Wybierz operacje (szyfrowanie,deszyfrowanie,wyjscie): "))
+    if (operacja == "szyfrowanie"):
+        tekst = list(str(input("Podaj tekst: ")))
+        tekst = szyfrowanie(tekst)
+        print(tekst)
+    elif (operacja == "deszyfrowanie"):
+        tekst = list(str(input("Podaj tekst: ")))
+        tekst = deszyfrowanie(tekst)
+        print(tekst)
+    elif (operacja == "wyjscie"):
+        x = 1
+    else:
+        print("Bledna operacja!")
