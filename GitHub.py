@@ -48,3 +48,4 @@ while (x == 0):
         x = 1
     else:
         print("Bledna operacja!")
+#nie działa
