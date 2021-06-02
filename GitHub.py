@@ -26,6 +26,9 @@ while (x == 0):
     operacja = str(input("Wybierz operacje (1,2 lub 3): \n 1.Szyfrowanie \n 2.Deszyfrowanie \n 3.Wyjście \n Wybierz: "))
     if (operacja == "1"):
         klucz = int(input("Podaj klucz od 1 do 10: "))
+        while (klucz<1 and klucz>10):
+            print("Błąd!")
+            klucz = int(input("Podaj klucz od 1 do 10: "))
         tekst = list(str(input("Podaj tekst: ")))
         tekst = szyfrowanie(tekst,klucz)
         print(tekst)
