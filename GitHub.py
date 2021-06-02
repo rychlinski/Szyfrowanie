@@ -2,20 +2,8 @@
 #Funkcja szyfrowanie, deszyfrowanie i jakieś menu
 
 
-# funkcja szyfrująca tekst
-#def szyfrowanie(tekst):
-#    for i in range(len(tekst)):
-#        if (tekst[i] == "a"):
-#            tekst[i] = "@"
-#        elif (tekst[i] == "e"):
-#            tekst[i] = "^"
-#        elif (tekst[i] == "i"):
-#            tekst[i] = "&"
-#        elif (tekst[i] == "o"):
-#            tekst[i] = "%"
-#        elif (tekst[i] == "y"):
-#            tekst[i] = "+"
-        # dodanie znaków specjalnych do szyfru
+
+
 def szyfrowanie(tekst,klucz):
     klucz = 5
     for i in range(len(tekst)):
@@ -26,21 +14,6 @@ def szyfrowanie(tekst,klucz):
     tekst = ''.join(tekst)
     return(tekst)
 
-
-#funkcja deszyfrująca
-
-#def deszyfrowanie(tekst):
-    #for i in range(len(tekst)):
-        #if (tekst[i] == "@"):
-            #tekst[i] = "a"
-        #elif (tekst[i] == "^"):
-            #tekst[i] = "e"
-        #elif (tekst[i] == "&"):
-            #tekst[i] = "i"
-        #elif (tekst[i] == "%"):
-            #tekst[i] = "o"
-        #elif (tekst[i] == "+"):
-            #tekst[i] = "y"
 
 def deszyfrowanie (tekst, klucz):
     klucz = 5
