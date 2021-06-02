@@ -16,7 +16,7 @@
 #        elif (tekst[i] == "y"):
 #            tekst[i] = "+"
         # dodanie znaków specjalnych do szyfru
-def szyfrowanie(tekst):
+def szyfrowanie(tekst,klucz):
     klucz = 5
     for i in range(len(tekst)):
         x = ord(tekst[i]) + klucz
@@ -42,7 +42,7 @@ def szyfrowanie(tekst):
         #elif (tekst[i] == "+"):
             #tekst[i] = "y"
 
-def deszyfrowanie (tekst):
+def deszyfrowanie (tekst, klucz):
     klucz = 5
     for i in range(len(tekst)):
         x = ord(tekst[i]) - klucz
