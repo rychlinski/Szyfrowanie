@@ -49,4 +49,5 @@ while (x == 0):
 
 #Gotowe!
 #Przemysław Rychliński nr indeksu 71576
+#Justyna Skoczylas nr indeksu 70545
 #Wiktoria Kozłowska nr indeksu 70502
