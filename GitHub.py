@@ -17,7 +17,7 @@
 #            tekst[i] = "+"
         # dodanie znaków specjalnych do szyfru
 def szyfrowanie(tekst):
-    klucz = 29
+    klucz = 5
     for i in range(len(tekst)):
         x = ord(tekst[i]) + klucz
         tekst[i] = chr(x)
@@ -43,7 +43,7 @@ def szyfrowanie(tekst):
             #tekst[i] = "y"
 
 def deszyfrowanie (tekst):
-    klucz = 29
+    klucz = 5
     for i in range(len(tekst)):
         x = ord(tekst[i]) + klucz
         tekst[i] = chr(x)
