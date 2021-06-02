@@ -1,11 +1,8 @@
 #Zrobimy program do szyfrowania
 #Funkcja szyfrowanie, deszyfrowanie i jakieś menu
 
-
-
-
 def szyfrowanie(tekst,klucz):
-    klucz = 5
+
     for i in range(len(tekst)):
         x = ord(tekst[i]) + klucz
         tekst[i] = chr(x)
@@ -14,9 +11,7 @@ def szyfrowanie(tekst,klucz):
     tekst = ''.join(tekst)
     return(tekst)
 
-
 def deszyfrowanie (tekst, klucz):
-    klucz = 5
     for i in range(len(tekst)):
         x = ord(tekst[i]) - klucz
         tekst[i] = chr(x)
