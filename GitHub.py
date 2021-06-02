@@ -45,3 +45,6 @@ while (x == 0):
     else:
         print("Bledna operacja!")
 #działa
+
+#Gotowe!
+#Przemysław Rychliński nr indeksu 71576
